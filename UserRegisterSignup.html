@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="UserRegisterValidation.js"></script>
+</head>
+<body>
+<!--<div class="row">-->
+<div class="row-sm-12 row-lg-12" style="height:8%">
+<nav>
+  <ul>
+   <li style="float:left;"> <img src="express.jpg" width="50px" height="50px" alt="pic of logo"></li>
+   <li style="float:left;"><a href="Homepage.html">Lime Tray</a></li>
+   <li><a href="SignIn.html">SIGN IN</a></li> 
+  </ul>
+ </nav>
+</div>
+<div class="row-sm-12 row-lg-12" style="height:100%">
+ <div id="reservation">
+  <br><br><h1 style="margin-block-start:0.0em;margin-block-end: 0.0em;text-align:center;padding-bottom:5px;">REGISTRATION</h1>
+  <h4 style="padding:0px;text-align:center;margin-block-start:0.0em;margin-block-end: 0.0em;text-align:center;">Waiting To Serve You</h4>
+  <form name="form_2" onsubmit="return submitForm2()">
+   <div align="center" style="margin-top: 5px;">
+   <label style="font-family:sans-serif;font-size:18px;letter-spacing:2px;">Enter your Name        : </label> <input type="text" name="name_1" class="f-con" id="namecheck"onchange="nameValidation()" /><br><span id="errorName1" style="color:red;font-weight:bold;font-size:18px;font-family:sans-serif;"></span><br>
+   <label style="font-family:sans-serif;font-size:18px;letter-spacing:2px;">Enter your User Id     : </label> <input type="text" name="userid_1" class="f-con" id="idcheck" onchange="useridValidation()" /><br><span id="errorUserid" style="color:red;font-weight:bold;font-size:18px;font-family:sans-serif;"></span><br>
+   <label style="font-family:sans-serif;font-size:18px;letter-spacing:2px;">Enter   Password    : </label> <input type="password" name="pwd_1" class="f-con" id="passcheck2" onchange="passwordValidation2()" /><br><span id="errorPass2" style="color:red;font-weight:bold;font-size:18px;font-family:sans-serif;"></span><br>
+   <label style="font-family:sans-serif;font-size:18px;letter-spacing:2px;">Confirm  Password  :   </label> <input type="password" name="email_2" class="f-con" id="confirmpasscheck" onchange="confirmpassValidation()" /><br><span id="errorConfirm" style="color:red;font-weight:bold;font-size:18px;font-family:sans-serif;"></span><br>
+   <label style="font-family:sans-serif;font-size:18px;letter-spacing:2px;">Enter your Email Id    : </label>   <input type="email" name="email_id" class="f-con" id="emailidcheck" onchange="emailidValidation()" /><br><span id="errorEmailid" style="color:red;font-weight:bold;font-size:18px;font-family:sans-serif;"></span><br>
+   <label style="font-family:sans-serif;font-size:18px;letter-spacing:2px;">Enter PhoneNumber : </label> <input type="text" name="phonenumber_1" class="f-con" id="phonenumcheck" onchange="phonenumValidation()" /><br><span id="errorPhonenum" style="color:red;font-weight:bold;font-size:18px;font-family:sans-serif;"></span><br>
+    <input type="submit" name="submit" class="f-sub" value="Register" />
+    <footer><h6>&#169; copyrights</h6></footer>
+   </div>
+  </form>
+ </div>
+</div>
+</body>
+</html>
